@@ -1,0 +1,10 @@
+language: scala
+
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION 'set scalaJSStage in Global := FastOptStage' test
+
+scala:
+  - 2.11.5
+
+jdk:
+  - oraclejdk7

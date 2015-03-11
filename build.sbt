@@ -21,7 +21,7 @@ val bananaV = "0.8.0"
  * - http://www.scala-js.org/doc/sbt/run.html
  * - http://www.scala-js.org/doc/sbt/js-envs.html
  */
-scalaJSStage in Global := FastOptStage
+//scalaJSStage in Global := FastOptStage
 
 /* Documentation for cross-building with sbt-scalajs available at
  * http://www.scala-js.org/doc/sbt/cross-building.html
