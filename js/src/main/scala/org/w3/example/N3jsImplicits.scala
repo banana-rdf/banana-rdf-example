@@ -6,7 +6,8 @@ import scalajs.concurrent.JSExecutionContext.Implicits.runNow
 
 object N3jsImplicits {
 
-  // an implementation of [[LDClient]] for N3js and XHR
+  // an implementation of [[LDClient]] for N3js and XHR. This can only
+  // work in an environment where XHR is available
   implicit val N3jsLDClient = new LDClient[N3js] {
 
     val turtleReader = implicitly[RDFReader[N3js, Future, Turtle]]
