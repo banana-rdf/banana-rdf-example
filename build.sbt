@@ -36,6 +36,8 @@ lazy val example = crossProject
     // banana-rdf is the core dependency. It contains all the
     // abstractions and targets for the JVM and JS environments
     libraryDependencies += "org.w3" %%% "banana-rdf" % bananaV,
+    // banana-rdf still has some dependencies that are not yet on Maven Central
+    resolvers += Resolver.url("inthenow-releases", url("http://dl.bintray.com/inthenow/releases"))(Resolver.ivyStylePatterns),
     // an easy way to write tests for both environments
     // see https://github.com/lihaoyi/utest
     libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1" % "test",
