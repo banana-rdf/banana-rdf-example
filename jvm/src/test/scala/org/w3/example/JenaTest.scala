@@ -16,7 +16,7 @@ object JenaStoreTest extends StoreTest[Jena, Dataset] {
 
     val directory = Paths.get(dir)
 
-    if (new File(tempDir).exists) {
+    if (new File(dir).exists) {
 
       Files.walkFileTree(directory, new SimpleFileVisitor[Path] {
         override def visitFile(file: Path, attrs: BasicFileAttributes): FileVisitResult = {
