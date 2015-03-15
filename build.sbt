@@ -15,7 +15,7 @@ lazy val root = project.in(file("."))
     publishLocal := {}
   )
 
-val bananaV = "0.8.0"
+val bananaV = "0.8.1"
 
 /* Enable FastOptStage if you have node.js installed. See:
  * - http://www.scala-js.org/doc/sbt/run.html
